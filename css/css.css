@@ -1,0 +1,44 @@
+body{
+	background-color: black;
+}
+#encabezado{
+	width: 100%;
+	height: 150px;
+	background-color: green;
+}
+#botones{
+	width: 100%;
+	height: 60px;
+	background-color: red;
+	top: 0px;
+	position: relative;
+}
+
+#navegacion{
+	position: relative;
+}
+
+#Opcion1,#Opcion2,#Opcion3,#Opcion4{
+	text-align: center;
+	line-height: 40px;
+	font-size: 25px;
+
+	background-color: blue;
+	width: 100px;
+	height: 50px;
+
+	position: relative;
+	margin-left: 50px;
+
+	float: left;
+	margin-top: 2px;
+
+	border: inset;
+	border-radius: 10px;
+}
+
+#presentacion{
+	width: 100%;
+	height: 200px;
+	background-color: yellow;
+}
