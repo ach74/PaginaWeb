@@ -5,25 +5,123 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="Pagina web para realizar un examen">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel='stylesheet' media='screen and (min-width: 751px)' href='css/css.css'>
-	<link rel="stylesheet" media="screen and (max-width: 750px)" href="css/mobil.css">
+	<link rel='stylesheet' media='screen and (min-width: 631px)' href='css/css.css'>
+	<link rel="stylesheet" media="screen and (max-width: 630px)" href="css/mobil.css">
 	<script src="js/js.js"></script>
 </head>
 <body>
 
-	<div id="encabezado"></div>
+	<div id="encabezado">
+		<img id="logo" src="img/logo.jpg" alt="logo">
+	</div>
 
 	<div id="botones">
 		<div id="navegacion">
-			<a href="#"><div id="Opcion1">Opcion1</div></a>
-			<a href="#"><div id="Opcion2">Opcion2</div></a>
-			<a href="#"><div id="Opcion3">Opcion3</div></a>
-			<a href="#"><div id="Opcion4">Opcion4</div></a>
+			<a id="Opc1" href="#"><div id="Opcion1">Información</div></a>
+			<a id="Opc2" href="#"><div id="Opcion2">Ubicación</div></a>
+			<a id="Opc3" href="#"><div id="Opcion3">Test</div></a>
 		</div>
 	</div>
 
-	<div id="presentacion">
-		<p></p>
+	<div id="Informacion">
+		<p> 
+			<br>
+			Te acabas de comprar una moto y, más que rodar tu solo, que te aseguro que se rueda muy bien, estás pensando en rodar con un grupo de amigos, que la verdad, se rueda mejor. Pero no quieres un grupo de amigos cualquiera, y además eres caprichoso y quieres ser el lider del asunto, quieres montarte tu propio motoclú y controlar el cotarro. Mal empiezas, te falta mucha humildad. Pero bueno, todo es posible.<br><br>
+
+
+			Para hacer algo así lo tienes realmente fácil, solo necesitas encontrar a tres o cuatro como tu, igual de novatillos, igual de amantes de la manada sinsentido y ya está, pillais papel y lapiz, haceis un dibujito, le poneis un nombre al asunto tipo "Moto Club Tuercerruedas con cascabelitos" (o tuercebotas, da lo mismo), os haceis unas camisetas o lo coseis todo en una chaqueta y a rodar. Hala, ya eres el lider de un motoclú, ya eres feliz. No tienes ni repajolera idea de si el que te sigue se quedará a tu lado cuando las cosas vengan duras pero tienes un puto motoclú, tus amiguitos también. Los reyes de la carretera vais a ser.<br><br>
+
+			Eso si, depende de como hayas hecho el parche y según como vayas por la vida a lo mejor vas y te lo tienes que quitar.</p>
+	</div>
+
+	<div id="Ubicacion">
+		<p>
+		Plaça de la Vila, 1
+		08849 Sant Climent de Llobregat
+		Barcelona
+		Telf: 670 405 341
+		e-mail: info@clubsanglascatalunya.com
+		Contactos: Álex Rubíes
+		</p>
+	</div>
+
+	<div id="Test">
+		<br>
+
+		<label for="name">Name:</label>
+        <input type="text" id="name" />
+        <br>
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" />
+        <br><br>
+        <pre>
+
+		Pregunta 1 <br/>
+		<input name="pregunta1" type="checkbox" value="Respuesta 1"/> 	Respuesta 1
+		<input name="pregunta1" type="checkbox" value="Respuesta 2"/> 	Respuesta 2
+		<input name="pregunta1" type="checkbox" value="Respuesta 3"/> 	Respuesta 3
+		<br><br>
+
+		Pregunta 2 <br/>
+		<input name="pregunta2" type="checkbox" value="Respuesta 1"/> 	Respuesta 1
+		<input name="pregunta2" type="checkbox" value="Respuesta 2"/> 	Respuesta 2
+		<input name="pregunta2" type="checkbox" value="Respuesta 3"/> 	Respuesta 3
+		<br><br>
+
+		Pregunta 3 <br/>
+		<input type="radio" name="pregunta3" value="Respuesta 1"/> Respuesta 1
+		<input type="radio" name="pregunta3" value="Respuesta 2"/> Respuesta 2
+		<input type="radio" name="pregunta3" value="Respuesta 3"/> Respuesta 3
+		<br><br>
+
+		Pregunta 4 <br/>
+		<input type="radio" name="pregunta4" value="Respuesta 1"/> Respuesta 1
+		<input type="radio" name="pregunta4" value="Respuesta 2"/> Respuesta 2
+		<input type="radio" name="pregunta4" value="Respuesta 3"/> Respuesta 3
+		<br><br>
+
+		Pregunta 5 <br>
+		 <select id="pregunta5">
+			<option value="1" selected>Respuesta 1</option>
+			<option value="2">Respuesta 2</option>
+			<option value="3">Respuesta 3</option>
+		 </select>
+		 <br><br>
+
+		Pregunta 6<br>
+		 <select id="pregunta6" multiple>
+			<option value="1" selected>Respuesta 1</option>
+			<option value="2">Respuesta 2</option>
+			<option value="3">Respuesta 3</option>
+		 </select>
+		<br><br>
+
+		Pregunta 7<br>
+		 <input type='text'>
+		 <br><br>
+
+		 Pregunta 8 <br>
+		 <select id="pregunta5">
+			<option value="1" selected>Respuesta 1</option>
+			<option value="2">Respuesta 2</option>
+			<option value="3">Respuesta 3</option>
+		 </select>
+		 <br><br>
+
+		 Pregunta 9<br>
+		 <select id="pregunta6" multiple>
+			<option value="1" selected>Respuesta 1</option>
+			<option value="2">Respuesta 2</option>
+			<option value="3">Respuesta 3</option>
+		 </select>
+		<br><br>
+
+		Pregunta 10<br>
+		 <input type='text'>
+		 <br><br>
+
+		<input type="reset" name="limpiar" value="Borrar datos del formulario" />
+
 	</div>
 
 </body>

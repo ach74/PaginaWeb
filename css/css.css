@@ -1,31 +1,39 @@
 body{
 	background-color: black;
+	font-family: Garamond;
+	font-size: 20px;
 }
+
+p{
+	margin: 10px;
+}
+
 #encabezado{
 	width: 100%;
-	height: 150px;
-	background-color: green;
+	height: auto;
+	background-color: #FFF;
 }
 #botones{
 	width: 100%;
-	height: 60px;
-	background-color: red;
+	height: 40px;
+	background-color:  #9E9E9E ;
 	top: 0px;
 	position: relative;
+	margin-top: 2px;
 }
 
 #navegacion{
 	position: relative;
 }
 
-#Opcion1,#Opcion2,#Opcion3,#Opcion4{
+#Opcion1,#Opcion2,#Opcion3{
 	text-align: center;
-	line-height: 40px;
 	font-size: 25px;
 
-	background-color: blue;
-	width: 100px;
-	height: 50px;
+	background-color:  #f2f3f4 ;
+	width: 150px;
+	height: 30px;
+	color: black;
 
 	position: relative;
 	margin-left: 50px;
@@ -33,12 +41,27 @@ body{
 	float: left;
 	margin-top: 2px;
 
-	border: inset;
-	border-radius: 10px;
+	border: solid;
 }
 
-#presentacion{
+#Informacion,#Ubicacion,#Test{
 	width: 100%;
-	height: 200px;
-	background-color: yellow;
+	height: auto;
+	min-height: 600px;
+	background-color: #f2f3f4;
+	margin-top: -8px;
+	text-indent: 10px;
+}
+
+#logo{
+	height: 250px;
+	width: 250px;
+}
+
+#Ubicacion{
+	display: none;
+}
+
+#Test{
+	display: none;
 }
