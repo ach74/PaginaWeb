@@ -44,7 +44,7 @@ p{
 	border: solid;
 }
 
-#Informacion,#Ubicacion,#Test{
+#Informacion,#Ubicacion{
 	width: 100%;
 	height: auto;
 	min-height: 600px;
@@ -64,4 +64,14 @@ p{
 
 #Test{
 	display: none;
+	width: 100%;
+    height: auto;
+    min-height: 600px;
+    background-color: #f2f3f4;
+    margin-top: 2px;
+    text-indent: 10px
+}
+
+#mapa{
+	margin: 15px;
 }
