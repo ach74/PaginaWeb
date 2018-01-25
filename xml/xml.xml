@@ -36,12 +36,14 @@
 
         <question id="pregunta5">
 	<type>select multiple</type>
-	<title>¿Cuantas marchas tienen una moto?</title>
-	<option>Dovizioso</option>
-	<option>De Angelis</option>
-	<option>Lorenzo</option>
-	<answer>3</answer>
-    </question>/**/
+	<title>¿Cuales son tipos de casco?</title>
+	<option>Casco integral</option>
+	<option>Cascos jet</option>
+	<option>Cascos completo</option>
+	<option>Cascos naket</option>
+	<answer>1</answer>
+	<answer>2</answer>
+    </question>
 
         <question id="pregunta5">
 	<type>select multiple</type>
