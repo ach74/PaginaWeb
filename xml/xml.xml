@@ -3,7 +3,7 @@
 <!DOCTYPE questions>
 
 <questions>
-    	<question id="pregunta">
+    	<question id="pregunta1">
 			<type>text</type>
 				<title>¿Cuántos títulos del mundo ha conseguido Rossi de manera consecutiva?</title>
 			<answer>9</answer>
@@ -44,7 +44,7 @@
 			<answer>2</answer>
     	</question>
 
-        <question id="pregunta5">
+        <question id="pregunta6">
 			<type>select multiple</type>
 				<title>¿Cuantas ruesdas tiene una moto?</title>
 					<option>2</option>
@@ -55,7 +55,7 @@
 			<answer>1</answer>
     	</question>
 
-    	<question id="pregunta6">
+    	<question id="pregunta7">
 			<type>checkbox</type>
 				<title>¿Cuál son marcas de motos?</title>
 					<option>Keeway</option>
@@ -66,7 +66,7 @@
 			<answer>4</answer>
     	</question>
 	
-	    <question id="pregunta7">
+	    <question id="pregunta8">
 			<type>checkbox</type>
 				<title>¿Quién es el piloto que más años tiene en MotoGP?</title>
 					<option>Jarama</option>
@@ -77,7 +77,7 @@
 			<answer>2</answer>
    		</question>
 
-    	<question id="pregunta8">
+    	<question id="pregunta9">
 			<type>radio</type>
 				<title>¿Cuántos pilotos españoles participan en Moto2 en 2010?</title>
 					<option>7</option>
@@ -87,7 +87,7 @@
 				<answer>4</answer>
     	</question>
 
-    	<question id="pregunta9">
+    	<question id="pregunta10">
 			<type>radio</type>
 				<title>Quién de estos pilotos debuta en MotoGP esta temporada?</title>
 					<option>Barberá</option>

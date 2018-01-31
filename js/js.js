@@ -46,12 +46,8 @@ function gestionarXml(dadesXml){
   var xmlDoc = dadesXml.responseXML;
 
 
-	var p;
-	var op;
-  
+	var p; 
 for (var i = 0 ; i <= 10; i++) {
-
-
 		p = "p" + (i + 1) ;
 		document.getElementById(p).innerHTML = xmlDoc.getElementsByTagName("title")[i].innerHTML;
 	}
