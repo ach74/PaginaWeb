@@ -2,6 +2,7 @@
 
 var url ="https://cdn.rawgit.com/ach74/PaginaWeb/a3047ad5/xml/xml.xml";
 var xhttp = new XMLHttpRequest();
+var Numerico= null;
 
 
 
@@ -45,11 +46,23 @@ xhttp.send();
 function gestionarXml(dadesXml){
   var xmlDoc = dadesXml.responseXML;
 
+		var p; 
+		var r;
+	for (var i = 0 ; i <= 10; i++) {
+			p = "p" + (i + 1) ;
+			document.getElementById(p).innerHTML = xmlDoc.getElementsByTagName("title")[i].innerHTML;
+				if (i <= 1){
+				r = "r" + (i+1)
+				document.getElementById(r).innerHTML =parseInt(xmlDoc.getElementsByTagName("answer")[i].innerHTML);
+				}else if (i >= 2 && i <= 3) {
+					var opcionesSelect = [];
+					var prg = "pregunta" + i;
+ 					var nopt = xmlDoc.getElementById(prg).getElementsByTagName('option')[i].innerHTML;
+						
+				}
 
-	var p; 
-for (var i = 0 ; i <= 10; i++) {
-		p = "p" + (i + 1) ;
-		document.getElementById(p).innerHTML = xmlDoc.getElementsByTagName("title")[i].innerHTML;
-	}
+
+		}
+
 }
 
