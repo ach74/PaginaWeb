@@ -1,5 +1,5 @@
 // fichoro xml que está en el servidor rawgit
-var url="https://rawgit.com/ach74/PaginaWeb/master/json/json.json";
+var url="https://cdn.rawgit.com/ach74/PaginaWeb/f8b5ff0c/json/json.json";
 
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
@@ -14,7 +14,23 @@ xhttp.send();
 // función personalizada que gestiona la respuesta a la petición de fichero
 function gestionarJson(dadesJson){
   var object = JSON.parse(dadesJson);
-  document.getElementById("p1").innerHTML = object.title[0];
- // document.getElementById("t1").innerHTML = object.pregunta[0].tipus;
- // document.getElementsByTagName("span")[0].innerHTML = object.pregunta[0].title;
+
+  	//Poner titulos
+	for(a=0; a<10;a++){
+	  document.getElementsByTagName("span")[a].innerHTML = object.question[a].title;
+	}
+	//Rellenar Select
+    for (a = 2; a < 6; a++) {
+        var opciones = object.question[a].option.length;
+        var select = document.getElementsByTagName("select")[a - 2];
+        for (b= 0; b< opciones; b++) {
+            var option = document.createElement("option");
+            option.text = object.question[a].option[b];
+            option.value = b+ 1;
+            select.options.add(option);
+        }
+    }
+
+
 }
+
