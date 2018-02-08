@@ -1,6 +1,4 @@
-{
-  "questions": {
-    "question": [
+    [
       {
         "-id": "pregunta1",
         "type": "text",
@@ -120,5 +118,3 @@
         "answer": "1"
       }
     ]
-  }
-}
