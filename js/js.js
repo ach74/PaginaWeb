@@ -12,6 +12,15 @@ window.onload = function cargar(){
 	document.getElementById("Opc2").onclick=function(){Opc2();};
 	document.getElementById("Opc3").onclick=function(){Opc3();};
 
+	xhttp.onreadystatechange = function() {
+	   if (this.readyState == 4 && this.status == 200) {
+	    // función personalizada que gestiona la respuesta a la petición de fichero
+	    gestionarXml(this); 
+	   }
+	  };
+	  xhttp.open("GET", url, true); //url del fichero
+	xhttp.send();
+
 }
 
 function Opc1(){
@@ -47,22 +56,25 @@ function gestionarXml(dadesXml){
   var xmlDoc = dadesXml.responseXML;
 
 		var p; 
-		var r;
+	var r;
 	for (var i = 0 ; i <= 10; i++) {
 			p = "p" + (i + 1) ;
 			document.getElementById(p).innerHTML = xmlDoc.getElementsByTagName("title")[i].innerHTML;
 				if (i <= 1){
 				r = "r" + (i+1)
 				document.getElementById(r).innerHTML =parseInt(xmlDoc.getElementsByTagName("answer")[i].innerHTML);
-				}else if (i >= 2 && i <= 3) {
-					var opcionesSelect = [];
-					var prg = "pregunta" + i;
- 					var nopt = xmlDoc.getElementById(prg).getElementsByTagName('option')[i].innerHTML;
-						
 				}
+			}
 
 
+		for(var i = 2; i < 4; i++){
+	    var opcionesSelect = [];
+	    var max = xmlDoc.getElementsByTagName("question")[i].getElementsByTagName('option').length;
+		    for (var j = 0; j < max; j++) { 
+		      opcionesSelect[j] = xmlDoc.getElementsByTagName("question")[i].getElementsByTagName('option')[j].innerHTML;
+		      alert(opcionesSelect[j]);
+		    }
+	    ponerDatosSelectHtml(opcionesSelect, i);
 		}
-
-}
+	}
 
