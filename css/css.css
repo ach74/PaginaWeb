@@ -1,9 +1,19 @@
-body{
+#index{
 	background-color: black;
 	font-family: Garamond;
 	font-size: 20px;
 }
 
+#Examen{
+	background-image: url("../img/fondo-examen.jpg");
+	font-family: Garamond;
+	font-size: 20px;
+}
+
+#degradado{
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 50px;
+}
 p{
 	margin: 10px;
 }
@@ -62,16 +72,19 @@ p{
 	display: none;
 }
 
-#myform{
+#test{
 	display: none;
 	width: 100%;
     height: auto;
     min-height: 600px;
     background-color: #f2f3f4;
     margin-top: 2px;
-    text-indent: 10px
+    text-indent: 10px;
+    padding-left:50px;
 }
 
 #mapa{
 	margin: 15px;
+	width:40%; 
+	height:40%;
 }

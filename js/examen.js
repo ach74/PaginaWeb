@@ -31,6 +31,54 @@ function gestionarJson(dadesJson){
         }
     }
 
+	for (a = 6; a < 8; a++) {
+	        var opciones = object.question[a].option.length;
+	        var checkbox = document.getElementsByClassName("checkbox")[a-6];
+	        for (b = 0; b < opciones; b++) {
+
+	            var label = document.createElement("label");
+	            var input = document.createElement("input");
+	            var span = document.createElement("span");
+	            var br = document.createElement("br");
+
+	            checkbox.appendChild(label);
+
+	            label.innerText = object.question[a].option[b];
+	            label.appendChild(input);
+	            label.appendChild(span);
+	            label.className = "containerBox";
+	            input.type = "checkbox";
+	            input.value = b + 1;
+
+	            checkbox.appendChild(br);
+	        }
+	    }    
+
+	for (a = 8; a <=10; a++ ){
+			var opciones = object.question[a].option.length;
+			var radio = document.getElementsByClassName("radio")[a-8];
+
+			for ( b = 0 ; b < opciones; b++){
+
+				var label = document.createElement("label");
+				var input = document.createElement("input");
+	            var span = document.createElement("span");
+	            var br = document.createElement("br");
+
+	            	radio.appendChild(label);
+
+	            	label.innerText = object.question[a].option[b];
+	            	label.appendChild(input);
+	            	label.appendChild(span);
+	            	label.className = "containerRadio";
+	            	input.type = "radio";
+	            	input.value = b +1;
+	            	radio.appendChild(br);
+
+
+			}
+	}
+	
 
 }
 
