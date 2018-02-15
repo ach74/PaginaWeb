@@ -49,7 +49,7 @@ function gestionarJson(dadesJson){
 	            label.className = "containerBox";
 	            input.type = "checkbox";
 	            input.value = b + 1;
-
+	            span.className = "checkMarckBox";
 	            checkbox.appendChild(br);
 	        }
 	    }    
@@ -73,9 +73,8 @@ function gestionarJson(dadesJson){
 	            	label.className = "containerRadio";
 	            	input.type = "radio";
 	            	input.value = b +1;
+	            	span.className = "checkMarckRadio";
 	            	radio.appendChild(br);
-
-
 			}
 	}
 	
