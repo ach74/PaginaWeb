@@ -58,6 +58,12 @@ function gestionarJson(dadesJson){
 			var opciones = object.question[a].option.length;
 			var radio = document.getElementsByClassName("radio")[a-8];
 
+			if (a == 8) {
+				Name = "Pregunta 9";
+			}else{
+				Name = "Pregunta 10";
+			}
+
 			for ( b = 0 ; b < opciones; b++){
 
 				var label = document.createElement("label");
@@ -72,6 +78,7 @@ function gestionarJson(dadesJson){
 	            	label.appendChild(span);
 	            	label.className = "containerRadio";
 	            	input.type = "radio";
+	            	input.name = Name;
 	            	input.value = b +1;
 	            	span.className = "checkMarckRadio";
 	            	radio.appendChild(br);

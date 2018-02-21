@@ -6,6 +6,9 @@
 
 #Examen{
 	background-image: url("../img/fondo-examen.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;/*que no se repita el fondo*/
+
 	font-family: Garamond;
 	font-size: 25px;
 }
@@ -14,6 +17,13 @@
 	background-color: rgba(255, 255, 255, 0.5);
 	padding: 50px;
 }
+#marca{
+    height: 250px;
+    width: 550px;
+    margin-right: 50px;
+    float: right;
+}
+
 p{
 	margin: 10px;
 }
@@ -203,4 +213,25 @@ p{
 	height: 8px;
 	border-radius: 50%;
 	background: white;
+}
+#corregir{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 50px;
+    width: 250px;
+    border-radius: 10px;
+    text-align: center;
+}
+.a{
+    background-color: rgba(255 , 255, 255, 0.5);
+    border-radius: 10px;
+    text-align: center;
+}
+.select{
+    background-color: rgba(255 , 255, 255, 0.5);
+    border-radius: 10px;
+    text-align: center;
+}
+.Mselect{
+    background-color: rgba(255 , 255, 255, 0.5);
+    border-radius: 10px;
 }
